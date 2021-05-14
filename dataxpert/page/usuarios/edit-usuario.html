@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<script src="../../components/head.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/data-sets/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/generalStyle.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/jsgrid.css">
+	<link rel="stylesheet" type="text/css" href="../../css/data-sets/add-data-set.css">
+	<link rel="stylesheet" href="../../vendors/dropify/dropify.min.css">
+
+	<link href="../../assets/plugins/select2/css/select2.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../../assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<link class="main-stylesheet" href="../../assets/pages/css/themes/corporate.css" rel="stylesheet" type="text/css" />
+
+	<link href="../../assets/plugins/codrops-dialogFx/dialog.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../../assets/plugins/codrops-dialogFx/dialog-sandra.css" rel="stylesheet" type="text/css"
+		media="screen" />
+
+	<link href="../../assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+	<link href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="../../assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css"
+		media="screen" />
+	<link href="../../assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../../assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+	<link href="../../assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css" />
+	<link href="../../assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css"
+		media="screen">
+	<link href="../../assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"
+		media="screen">
+	<link href="../../assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css"
+		media="screen">
+	<link class="main-stylesheet" href="../../pages/css/themes/corporate.css" rel="stylesheet" type="text/css" />
+	<!-- Please remove the file below for production: Contains demo classes -->
+</head>
+
+<body class="fixed-header menu-pin menu-behind">
+
+	<!-- BEGIN SIDEBAR -->
+	<!-- BEGIN SIDEBPANEL-->
+	<nav class="page-sidebar" data-pages="sidebar" style="display: none;">
+
+		<!-- START SIDEBAR MENU -->
+
+		<script src="../../components/sidebar.js"></script>
+
+		<!-- END SIDEBAR MENU -->
+	</nav>
+	<!-- END SIDEBAR -->
+	<!-- END SIDEBAR -->
+	<!-- START PAGE-CONTAINER -->
+	<div class="page-container">
+
+		<!-- START PAGE HEADER WRAPPER -->
+		<!-- START HEADER -->
+
+		<script src="../../components/header.js"></script>
+
+		<!-- END HEADER -->
+		<!-- END PAGE HEADER WRAPPER -->
+		<!-- START PAGE CONTENT WRAPPER -->
+		<div class="page-content-wrapper">
+
+			<!-- START PAGE CONTENT -->
+			<div class="content">
+
+				<!--LOADER START-->
+				<script src="../../components/loader.js"></script>
+				<!--LOADER END-->
+				<!-- Start loader-overlay -->
+				<div id="loader-overlay-MOD"
+					class="loader-overlay-MOD full-height d-flex justify-content-center align-items-center"
+					style="opacity: 0.6; display: none !important;">
+					<div class="progress-circle-indeterminate m-t-45" style=""></div>
+				</div>
+				<!-- End loader-overlay -->
+				<!-- START JUMBOTRON -->
+				<div class="jumbotron" data-pages="parallax">
+					<div class=" container-fluid container-fixed-lg sm-p-l-0 sm-p-r-0" style="width:initial">
+						<div class="inner">
+							<!-- START BREADCRUMB -->
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a
+										href="../../page/usuarios/lista-usuarios.html">Usuarios</a></li>
+								<li class="breadcrumb-item active">Editar Usuario</li>
+							</ol>
+							<!-- END BREADCRUMB -->
+						</div>
+					</div>
+				</div>
+				<!-- END JUMBOTRON -->
+
+				<!-- START CONTAINER FLUID -->
+				<div class="container-fluid ">
+
+					<!-- BEGIN PlACE PAGE CONTENT HERE -->
+
+					<!-- START CONTAINER FLUID -->
+					<div class=" container-fluid   container-fixed-lg">
+						<div id="rootwizard" class="m-t-50">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs nav-tabs-linetriangle nav-tabs-separator nav-stack-sm"
+								role="tablist" data-init-reponsive-tabs="dropdownfx">
+
+								<li class="nav-item">
+									<a class="active d-flex align-items-center" data-toggle="tab" href="#tab1"
+										data-target="#tab1" role="tab"><i class="material-icons fs-14 tab-icon"></i>
+										<span>Información general</span></a>
+								</li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+
+								<div class="tab-pane slide-left padding-20 active sm-no-padding" id="tab1">
+									<div class="row row-same-height">
+										<div class="col-md-12">
+											<div class="padding-30 sm-padding-5">
+												<form role="form" id="frm-add" autocomplete="off">
+													<div class="form-group-attached">
+
+														<div class="form-group form-group-default ">
+															<label>Nombre</label>
+															<input type="textarea" id="nombreField" name="nombreField"
+																class="form-control" required>
+														</div>
+														<div class="form-group form-group-default ">
+															<label>Apellidos</label>
+															<input type="textarea" id="apellidosField"
+																name="apellidosField" class="form-control" required>
+														</div>
+														<div class="form-group form-group-default ">
+															<label>Correo</label>
+															<input type="email" id="correoField" name="correoField"
+																class="form-control" required>
+														</div>
+														<div
+															class="form-group form-group-default form-group-default-select2 ">
+															<label class="">Tipo</label>
+															<select id="seleTipo"
+																class="full-width select2-hidden-accessible"
+																data-placeholder="Select Country"
+																data-init-plugin="select2" tabindex="-1"
+																aria-hidden="true">
+																<option value="0">Administrador</option>
+																<option value="1">Usuario</option>
+															</select>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="padding-20 sm-padding-5 sm-m-b-20 sm-m-t-20 bg-white clearfix">
+									<ul class="pager wizard no-style">
+										<li class="next">
+											<button aria-label=""
+												class="btn btn-primary btn-cons   from-left pull-right" type="button">
+												<span>Siguiente</span>
+											</button>
+										</li>
+										<li class="next finish hidden">
+											<button aria-label="" id="btn-save"
+												class="btn btn-primary btn-cons   from-left pull-right" type="button">
+												<span>Guardar</span>
+											</button>
+										</li>
+										<li class="previous first hidden">
+											<button aria-label=""
+												class="btn btn-default btn-cons   from-left pull-right" type="button">
+												<span>Primero</span>
+												<!-- <span class="hidden-block">
+																<i class="material-icons fs-16">settings</i>
+															</span> -->
+											</button>
+										</li>
+										<li class="previous hidden">
+											<button aria-label=""
+												class="btn btn-default btn-cons   from-left pull-right" type="button">
+												<span>Anterior</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- END CONTAINER FLUID -->
+
+
+
+
+					<!-- END PLACE PAGE CONTENT HERE -->
+				</div>
+				<!-- END CONTAINER FLUID -->
+			</div>
+			<!-- END PAGE CONTENT -->
+			<!-- START FOOTER -->
+			<script src="../../components/footer.js"></script>
+
+			<!-- END FOOTER -->
+		</div>
+		<!-- END PAGE CONTENT WRAPPER -->
+	</div>
+	<!-- END PAGE CONTAINER -->
+
+
+	<!-- BEGIN VENDOR JS -->
+	<!-- BEGIN VENDOR JS -->
+	<script src="../../assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+	<!--  A polyfill for browsers that don't support ligatures: remove liga.js if not needed-->
+	<script src="../../assets/plugins/liga.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/popper/umd/popper.min.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+	<script src="../../assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="../../assets/plugins/select2/js/select2.full.min.js"></script>
+	<script type="text/javascript" src="../../assets/plugins/classie/classie.js"></script>
+	<script type="text/javascript" src="../../assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+	<script type="text/javascript" src="../../assets/plugins/dropzone/dropzone.min.js"></script>
+	<script type="text/javascript" src="../../assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
+	<script type="text/javascript" src="../../assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
+	<script src="../../assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript">
+	</script>
+	<script src="../../assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="../../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+	<!-- <script src="../../assets/plugins/quill/quill.min.js" type="text/javascript"></script> -->
+	<script src="../../assets/plugins/moment/moment.min.js"></script>
+	<script src="../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script src="../../assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+
+	<!--
+
+	-->
+	<script src="../../assets/plugins/bootstrap-typehead/typeahead.bundle.min.js"></script>
+	<script src="../../assets/plugins/bootstrap-typehead/typeahead.jquery.min.js"></script>
+	<script src="../../assets/plugins/handlebars/handlebars-v4.0.5.js"></script>
+	<!-- <script src="../../assets/plugins/quill/quill.min.js" type="text/javascript"></script> -->
+
+
+	<script type="text/javascript" src="../../assets/plugins/select2/js/select2.full.min.js"></script>
+	<script type="text/javascript" src="../../assets/plugins/classie/classie.js"></script>
+
+
+	<!-- BEGIN PAGE LEVEL JS -->
+	<script src="../../assets/js/form_elements.js" type="text/javascript"></script>
+
+	<script src="../../assets/js/scripts.js" type="text/javascript"></script>
+
+	<!-- END VENDOR JS -->
+	<!-- BEGIN CORE TEMPLATE JS -->
+	<script src="../../assets/pages/js/pages.min.js" type="text/javascript"></script>
+	<!-- END CORE TEMPLATE JS -->
+	<!-- BEGIN PAGE LEVEL JS -->
+	<script src="../../assets/js/form_wizard.js" type="text/javascript"></script>
+	<script src="../../assets/js/scripts.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL JS -->
+</body>
+
+<footer>
+
+	<script src="../../components/apiScripts.js"></script>
+
+	<!-- JS grid-->
+	<script src="../../assets/js/jsgrid/jsgrid.min.js"></script>
+	<!-- Scripts-->
+	<script type="text/javascript" src="../../js/usuarios/api-edit-usuario.js"></script>
+	<script type="text/javascript" src="../../js/usuarios/edit-usuario.js"></script>
+
+	<!-- dropify-->
+	<script src="../../vendors/jquery-file-upload/jquery.uploadfile.min.js"></script>
+	<script src="../../js/jquery-file-upload.js"></script>
+	<script src="../../vendors/dropify/dropify.min.js"></script>
+	<script src="../../js/dropify.js"></script>
+
+</footer>
+
+</html>

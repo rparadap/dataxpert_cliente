@@ -1,0 +1,76 @@
+@media only screen and (min-width: 980px)
+{
+    body.menu-pin .page-container .page-content-wrapper .content-mod {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 980px)
+{
+    .center-log-in{
+        padding-top: 12vh !important;
+    }
+    .center-log-in{
+        height: 93vh;
+    }
+}
+
+@media only screen and (max-width: 980px)
+{
+    .center-log-in{
+        height: 85vh;
+    }
+}
+
+.log-in-background {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    /*
+    content:url("../../img/log-in-background.jpg");
+    
+    background-image: url("../../img/log-in-background.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    */
+}
+
+  
+.log-in-background img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+}
+
+
+.page-container .page-content-wrapper .content-mod {
+    z-index: 10;
+    padding-top: 110px;
+    padding-bottom: 69px;
+    min-height: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("../../img/log-in-background.jpg");
+  
+    /* Control the height of the image */
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
